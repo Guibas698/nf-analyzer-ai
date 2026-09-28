@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NF-e de exemplo para testes do NF Analyzer AI -->
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe versao="4.00">
+      <ide>
+        <cUF>35</cUF>
+        <natOp>VENDA DE MERCADORIA</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>1234</nNF>
+        <dhEmi>2026-09-28T10:00:00-03:00</dhEmi>
+      </ide>
+      <emit>
+        <CNPJ>11222333000181</CNPJ>
+        <xNome>TECH SOLUTIONS COMERCIO LTDA</xNome>
+        <enderEmit>
+          <xLgr>Rua das Inovacoes</xLgr>
+          <nro>1500</nro>
+          <xBairro>Centro</xBairro>
+          <xMun>Sao Paulo</xMun>
+          <UF>SP</UF>
+          <CEP>01001000</CEP>
+        </enderEmit>
+        <IE>123456789012</IE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>44555666000177</CNPJ>
+        <xNome>DISTRIBUIDORA ABC EIRELI</xNome>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>PROD-001</cProd>
+          <xProd>Notebook Profissional 15.6 i7 16GB</xProd>
+          <NCM>84713012</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>5</qCom>
+          <vUnCom>4500.00</vUnCom>
+          <vProd>22500.00</vProd>
+        </prod>
+        <imposto>
+          <ICMS><ICMS00><CST>00</CST><vBC>22500.00</vBC><pICMS>18.00</pICMS><vICMS>4050.00</vICMS></ICMS00></ICMS>
+          <PIS><PISAliq><CST>01</CST><vBC>22500.00</vBC><pPIS>1.65</pPIS><vPIS>371.25</vPIS></PISAliq></PIS>
+          <COFINS><COFINSAliq><CST>01</CST><vBC>22500.00</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>1710.00</vCOFINS></COFINSAliq></COFINS>
+          <IPI><IPITrib><CST>50</CST><vBC>22500.00</vBC><pIPI>5.00</pIPI><vIPI>1125.00</vIPI></IPITrib></IPI>
+        </imposto>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>PROD-002</cProd>
+          <xProd>Monitor LED 27 4K</xProd>
+          <NCM>85285200</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>5</qCom>
+          <vUnCom>2200.00</vUnCom>
+          <vProd>11000.00</vProd>
+        </prod>
+        <imposto>
+          <ICMS><ICMS00><CST>00</CST><vBC>11000.00</vBC><pICMS>18.00</pICMS><vICMS>1980.00</vICMS></ICMS00></ICMS>
+          <PIS><PISAliq><CST>01</CST><vBC>11000.00</vBC><pPIS>1.65</pPIS><vPIS>181.50</vPIS></PISAliq></PIS>
+          <COFINS><COFINSAliq><CST>01</CST><vBC>11000.00</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>836.00</vCOFINS></COFINSAliq></COFINS>
+          <IPI><IPITrib><CST>50</CST><vBC>11000.00</vBC><pIPI>5.00</pIPI><vIPI>550.00</vIPI></IPITrib></IPI>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>33500.00</vBC>
+          <vICMS>6030.00</vICMS>
+          <vPIS>552.75</vPIS>
+          <vCOFINS>2546.00</vCOFINS>
+          <vIPI>1675.00</vIPI>
+          <vProd>33500.00</vProd>
+          <vFrete>350.00</vFrete>
+          <vSeg>167.50</vSeg>
+          <vDesc>0.00</vDesc>
+          <vNF>35692.50</vNF>
+        </ICMSTot>
+      </total>
+    </infNFe>
+  </NFe>
+</nfeProc>
