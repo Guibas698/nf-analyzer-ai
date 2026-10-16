@@ -1,8 +1,8 @@
-# 📄 NF Analyzer AI
+# NF Analyzer AI
 
 Um analisador inteligente de Notas Fiscais (NF-e/NFS-e) rodando 100% localmente. Utiliza LLMs open-source (via Ollama) para extrair dados da nota e redigir um relatório detalhado por extenso sobre quais impostos (ICMS, ISS, IPI, PIS, COFINS) devem ser pagos.
 
-## 🚀 Como Executar
+## Como Executar
 
 ### 1. Iniciar os containers
 ```bash
@@ -21,7 +21,7 @@ docker exec -it nf-ollama ollama run llama3
 - **Interface UI (Streamlit)**: http://localhost:8501
 - **API (FastAPI)**: http://localhost:8000/docs
 
-## 🧠 Arquitetura
+## Arquitetura
 1. **Frontend**: Streamlit (Upload de NFs em texto ou imagem simulada).
 2. **Backend**: FastAPI + LangChain.
 3. **IA Local**: Ollama rodando um modelo avançado para processamento de linguagem natural (NPL) privado.
